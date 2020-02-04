@@ -49,7 +49,7 @@ const GeometricObjects = ({ shape = 'cirlce', shapeColor, ...props }) => {
     props,
   );
   switch (shape) {
-    case 'cirlce':
+    case 'circle':
       return <Circle {...shapeProps} />
     case 'rectangle':
       return <Rectangle {...shapeProps} />
@@ -60,7 +60,7 @@ const GeometricObjects = ({ shape = 'cirlce', shapeColor, ...props }) => {
     case 'triangle':
       return <Triangle {...shapeProps} />
     default:
-
+      return <Circle {...shapeProps} />
   }
 };
 
