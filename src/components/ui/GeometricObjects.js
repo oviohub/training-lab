@@ -1,7 +1,7 @@
 /**
  * GeometricObjects component documentation:
  * This component display a geometric shape
- * @param shape The shape ("cirlce", "rectangle", "ellipse", "line" or "triangle") to display
+ * @param shape The shape ("circle", "rectangle", "ellipse", "line" or "triangle") to display
  * @param shapeColor The color of shape
  * Available colors are located in 'src/constants.js'
  * You can provide more parameters based on http://rsamec.github.io/react-shapes/ documentation
@@ -13,7 +13,7 @@ import { Circle, Rectangle, Ellipse, Line, Triangle } from 'react-shapes';
 import { colors } from '../../constants';
 
 const defaultsProps = {
-  cirlce: {
+  circle: {
     r: 125,
   },
   rectangle: {
@@ -37,7 +37,7 @@ const defaultsProps = {
   },
 }
 
-const GeometricObjects = ({ shape = 'cirlce', shapeColor, ...props }) => {
+const GeometricObjects = ({ shape = 'circle', shapeColor, ...props }) => {
   const defaultProps = defaultsProps[shape];
   const shapeProps = Object.assign(
     {},
@@ -49,7 +49,7 @@ const GeometricObjects = ({ shape = 'cirlce', shapeColor, ...props }) => {
     props,
   );
   switch (shape) {
-    case 'cirlce':
+    case 'circle':
       return <Circle {...shapeProps} />
     case 'rectangle':
       return <Rectangle {...shapeProps} />

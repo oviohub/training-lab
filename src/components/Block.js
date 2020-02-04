@@ -3,7 +3,7 @@
  * This component display a block with a background color and containing a geometric shape
  * @param size The size of the block (a number from 0 to 12)
  * @param backgroundColor The background color of the block
- * @param shape The shape ("cirlce", "rectangle", "ellipse", "line" or "triangle") of
+ * @param shape The shape ("circle", "rectangle", "ellipse", "line" or "triangle") of
  *              the Geometric Objects contained in the block
  * @param shapeColor The color of shape contained in the block
  * Available colors are located in 'src/constants.js'
